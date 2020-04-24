@@ -4,8 +4,8 @@
   "description": "This is a photo gallery application using Express, Multer, Mongoose and MongoDB",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Theodore Kelechukwu Onyejiaku",
   "license": "ISC",

@@ -21,11 +21,11 @@ connection.once("open", ()=>{
 })
 
 //Importing our routes
-const exerciseRouter = require("./routes/exercises");
-const userRouter = require("./routes/users");
+const punishmentRouter = require("./routes/punishments");
+const punisheeRouter = require("./routes/punishee");
 
-app.use("/exercises", exerciseRouter);
-app.use("/users", userRouter);
+app.use("/punishments", punishmentRouter);
+app.use("/punishees", punisheeRouter);
 
 
 const port = process.env.PORT || 5000;
