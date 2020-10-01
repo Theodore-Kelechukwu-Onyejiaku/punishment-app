@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 //This will allow our APP to serve JSON 
 app.use(express.json());
+app.use(express.static("public"));
 
 const uri = process.env.DATABASE_LOCAL;
 mongoose.connect(uri, {useNewUrlParser:true, useCreateIndex: true});
